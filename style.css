@@ -3,6 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   font-weight: 500;
+  min-height: 100vh;
 }
 
 .card {
@@ -10,9 +11,11 @@ body {
 }
 
 .preview-img {
-  max-width: 100%;
-  max-height: 300px;
-  margin-top: 15px;
+  width: 100%;          /* 카드 너비에 맞춤 */
+  max-width: 400px;     /* 사진 최대 크기 제한 */
+  height: auto;         /* 비율 유지 */
+  margin: 15px auto;    /* 중앙 정렬 + 여백 */
+  display: block;
   border-radius: 8px;
 }
 
@@ -22,4 +25,12 @@ body {
 
 .result-box .card-body {
   border-radius: 8px;
+}
+
+.result-box .card-body img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }

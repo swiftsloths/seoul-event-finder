@@ -26,7 +26,7 @@
         <input type="file" id="photoInput" accept="image/*" class="form-control mt-3">
 
         <!-- 업로드된 이미지 미리보기 -->
-        <img id="preview" class="preview-img d-none mt-3" alt="Uploaded photo preview">
+        <img id="preview" class="preview-img d-none" alt="Uploaded photo preview">
 
         <!-- 결과창 -->
         <div class="result-box text-start mt-4" id="result">
@@ -80,7 +80,7 @@
               output += `<p><b>📅 Date Taken:</b> ${dateTaken}</p>`;
             }
 
-            // 가짜 행사 데이터 여러 개 카드로 출력
+            // 가짜 이벤트 여러 개 카드로 출력
             const events = [
               {
                 title: "Traditional Music Concert",
