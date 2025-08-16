@@ -1,31 +1,25 @@
 body {
+  background-color: #003366; /* 진한 파랑 */
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #003973, #000428); /* 진한 파랑 배경 */
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: white;
+  font-weight: 500;
 }
 
 .card {
-  max-width: 800px;
-  width: 100%;
-  margin: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-.result-box {
-  margin-top: 20px;
+  border-radius: 12px;
 }
 
 .preview-img {
   max-width: 100%;
+  max-height: 300px;
   margin-top: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  border-radius: 8px;
 }
 
-h1 {
-  font-weight: 800; /* 글씨를 굵게 */
+.card-title {
+  font-weight: 800;
+}
+
+.result-box .card-body {
+  border-radius: 8px;
 }
