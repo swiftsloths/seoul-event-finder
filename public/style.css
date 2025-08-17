@@ -17,7 +17,7 @@ body {
     margin: 15px auto;
     display: block;
     border-radius: 8px;
-    box-shadow: 0 0 4px #0004;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.25); /* #0004 대신 rgba 사용 */
 }
 
 .card-title {
@@ -26,9 +26,34 @@ body {
 
 .result-box .card-body {
     border-radius: 8px;
-    background-color: #ffffff00;
+    background-color: #004488;
 }
 
 .result-box .card {
-    background-color: #ffffff00;
+    background-color: #0055aa;
+}
+
+/* 새롭게 추가된 blue-text 클래스 */
+.blue-text {
+    color: #87CEFA !important; /* lightskyblue */
+}
+
+/* 파일 입력 필드를 숨기는 스타일 */
+#photoInput {
+    display: none;
+}
+
+/* 라벨을 버튼처럼 보이게 하는 스타일 */
+#fileLabel {
+    background-color: #0055aa;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#fileLabel:hover {
+    background-color: #0066cc;
 }
