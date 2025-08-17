@@ -11,23 +11,26 @@ body {
 }
 
 .preview-img {
-    width: 250px;
-    height: 250px;
-    object-fit: contain; /* 이미지가 잘리지 않고, 지정된 크기 안에 모두 표시됩니다. */
+    width: 120px;  /* 고정된 크기 */
+    height: 120px; /* 고정된 크기 */
+    object-fit: cover;
     margin: 15px auto;
     display: block;
     border-radius: 8px;
+    box-shadow: 0 0 4px #0004;
 }
 
 .card-title {
     font-weight: 800;
 }
 
-.result-box .card-body {
-    border-radius: 8px;
-    background-color: #004488;
+.result-box .card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.result-box .card {
-    background-color: #0055aa;
+.result-box .card-body {
+    background-color: white;
+    color: black;
 }
